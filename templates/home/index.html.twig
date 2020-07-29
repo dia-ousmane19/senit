@@ -1,11 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}SEN IT TECHNOLOGY - Accueil{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset("css/cover.css")}}">
+{% endblock %}
 
 {% block body %}
-<header style="background:url({{asset('images/fond-banniere.jpg')}}) no-repeat center;height:590px;background-size:cover;">
+<div style="background:url({{asset('images/fond-banniere.jpg')}}) no-repeat center;height:590px;background-size:cover;">
   {% include ("home/partials/__header.html.twig")%}
-</header>
+  <div class="container " style="padding-top:200px">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+
+
+    <div class="">
+    <h1 class="text-center text-white text-uppercase ">Simplifiez-vous la vie avec sen it TECHNOLOGY <br> <small class="text-lowercase">Le numérique autrement</small> </h1>
+    <p class="text-center m-4 text-white">SEN IT TECHNOLOGY ,une entreprise qui délivre des services informatiques et digitaux.</p>
+    </div>
+    <div class="">
+      <button class="btn btn-primary btn-md">Qui sommes-nous ?</button>
+    </div>
+    </div>
+  </div>
+</div>
 
 
 <footer>
