@@ -1,6 +1,6 @@
 <nav class="navbar d-flex navbar-expand-lg justify-content-around navbar-light bg-transparent">
   <div class="" id="link-img">
-    <a class="navbar-brand" href="#" >
+    <a class="navbar-brand" href="{{path('home')}}">
       <img src="{{asset("images/logo.png")}}" width="160" height="140">
     </a>
   </div>
@@ -13,13 +13,13 @@
     <div class="navbar-text" >
       <ul class="navbar-nav " id="link-menu">
         <li class="nav-item active">
-          <a class="nav-link text-white text-uppercase " href="#" style="font-size:25px">Accueil</a>
+          <a class="nav-link text-white text-uppercase " href="{{path('home')}}" style="font-size:20px">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" style="font-size:25px" href="#">Contact</a>
+          <a class="nav-link text-white text-uppercase" style="font-size:20px" href="{{path('contact')}}">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" style="font-size:25px" href="#">A propos</a>
+          <a class="nav-link text-white text-uppercase" style="font-size:20px" href="{{path('apropos')}}">A propos</a>
         </li>
       </ul>
     </div>
