@@ -1,24 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#" style="margin-left:200px">Navbar w/ text</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar d-flex navbar-expand-lg justify-content-around navbar-light bg-transparent">
+  <div class="" id="link-img">
+    <a class="navbar-brand" href="#" >
+      <img src="{{asset("images/logo.png")}}" width="160" height="140">
+    </a>
+  </div>
+
+  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="{{asset("images/toggle.png")}}" class="" alt="">
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-
-    </ul>
-    <div class="navbar-text">
-      <ul class="navbar-nav mr-auto" style="margin-left:100px">
+    <ul class="navbar-nav mr-auto"></ul>
+    <div class="navbar-text" >
+      <ul class="navbar-nav " id="link-menu">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white text-uppercase " href="#" style="font-size:25px">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link text-white text-uppercase" style="font-size:25px" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link text-white text-uppercase" style="font-size:25px" href="#">A propos</a>
         </li>
       </ul>
     </div>
   </div>
+
 </nav>
