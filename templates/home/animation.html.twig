@@ -4,35 +4,28 @@
 {% block stylesheets %}
 <link rel="stylesheet" href="{{asset("css/cover.css")}}">
 {% endblock %}
-
 {% block body %}
 <div style="background:url({{asset('images/fond-banniere.jpg')}}) no-repeat center;height:300px;background-size:cover;">
   {% include ("home/partials/__header.html.twig")%}
   <div class="container ">
     <div class="d-flex flex-column justify-content-center align-items-center">
       <div class="">
-        <h1 class="text-center text-white text-uppercase ">Animation 3D</h1>
+        <h1 class="text-center text-white text-uppercase">Animation 3D</h1>
       </div>
     </div>
   </div>
 </div>
-
 <div class="container mb-4">
-<hr class="featurette-divider">
-<h1 class="text-center">Animation <small class="text-muted">3D</small></h1>
-<hr class="featurette-divider">
-<div class="row">
-  <div class="col-md-5" data-aos="fade-right" data-aos-duration="3000">
-    <img class="featurette-image img-fluid" src="https://via.placeholder.com/500x500" alt="Generic placeholder image">
+  <hr class="featurette-divider">
+  <h1 class="text-center">Animation <small class="text-muted">3D</small></h1>
+  <hr class="featurette-divider">
+  <div class="row">
+    <div class="col-md-5" data-aos="fade-right" data-aos-duration="3000">
+      <img class="featurette-image img-fluid" src="{{asset("images/animation3d.jpg")}}" alt="Generic placeholder image">
+    </div>
+    <div class="col-md-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+      <p style="font-size:25px;" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
-  <div class="col-md-5 text-center" data-aos="fade-left" data-aos-duration="1000">
-  <p style="font-size:25px;" class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-
 </div>
-
-</div>
-
-
 {% endblock %}
