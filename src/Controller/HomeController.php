@@ -28,4 +28,11 @@ class HomeController extends AbstractController
     {
         return $this->render('home/contact.html.twig');
     }
+    /**
+     * @Route("/animation", name="animation")
+     */
+    public function animation()
+    {
+        return $this->render('home/animation.html.twig');
+    }
 }
