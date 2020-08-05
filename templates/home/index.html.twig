@@ -24,54 +24,46 @@
 <div class="container mt-4 marketing">
   <!-- Three columns of text below the carousel -->
   <div class="row">
+    {% for service in  FirstThreeService %}
+
     <div class="col-lg-4">
-      <img class="rounded-circle " src="{{asset('images/animation3d.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-      <a href="{{path('animation')}}"><h2>Animation <span class="text-muted">3D</span> </h2></a>
+      <img class="rounded-circle " src="{{asset('images/')}}{{service.images}}" alt="{{service.services}}" width="140" height="140">
+      <a href="{{path('animation',{'slug':service.slug})}}"><h2>{{service.services}} <span class="text-muted">{{service.textMuted}}</span> </h2></a>
       <p class="text-center">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="{{asset('images/webdevelopment.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-      <a href="#"><h2>Développement <span class="text-muted">web</span> et <span class="text-muted">application</span> mobile</h2> </a>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+    </div>
+    {% endfor %}
 
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="{{asset('images/graphic-designer.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-      <a href="#"><h2>Design <span class="text-muted">graphique</span></h2></a>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-    </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
   <!-- START THE FEATURETTES -->
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7" data-aos="fade-right" data-aos-duration="3000">
-      <a href="#"><h2 class="featurette-heading">Marketing <span class="text-muted">digital</span></h2></a>
+      <a href="{{path('animation',{'slug':'marketing-digital'})}}"><h2 class="featurette-heading">Marketing <span class="text-muted">digital</span></h2></a>
       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-      <img class="featurette-image img-fluid" src="{{asset("images/marketingDigital.jpg")}}" alt="Generic placeholder image">
+      <img class="featurette-image img-fluid" src="{{asset("images/marketing-digital.jpg")}}" alt="Marketing digital">
     </div>
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7 order-md-2" data-aos="fade-right" data-aos-duration="3000">
-      <a href="#"><h2 class="featurette-heading">Vente de <span class="text-muted">matériels informatiques</span></h2></a>
+      <a href="{{path('animation',{'slug':'vente-de-materiel-informatique'})}}"><h2 class="featurette-heading">Vente de <span class="text-muted">matériels informatiques</span></h2></a>
       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5 order-md-1" data-aos="fade-left" data-aos-duration="3000">
-      <img class="featurette-image img-fluid mx-auto" src="{{asset("images/Vente.jpg")}}" alt="Generic placeholder image">
+      <img class="featurette-image img-fluid mx-auto" src="{{asset("images/vente-de-materiel-informatique.jpg")}}" alt="Vente de matériels informatiques">
     </div>
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7" data-aos="fade-right" data-aos-duration="3000">
-      <a href="#"><h2 class="featurette-heading">Formation <span class="text-muted">accélerée</span></h2></a>
+      <a href="{{path('animation',{'slug':'formation-acceleree'})}}"><h2 class="featurette-heading">Formation <span class="text-muted">accélerée</span></h2></a>
       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5" data-aos="fade-left" data-aos-duration="3000">
-      <img class="featurette-image img-fluid mx-auto" src="{{asset('images/formationAcceleree.jpg')}}" alt="Generic placeholder image">
+      <img class="featurette-image img-fluid mx-auto" src="{{asset('images/formation-acceleree.jpg')}}" alt="Formation accélerée">
     </div>
   </div>
   <hr class="featurette-divider">
